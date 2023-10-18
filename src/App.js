@@ -3,6 +3,8 @@ import { BrowserRouter as Router, Route, Link, Switch } from "react-router-dom";
 import Home from "./Home";
 import About from "./About";
 import UserProfile from "./UserProfile";
+import User from "./User";
+import PostList from "./PostList";
 import NoMatch from "./NoMatch";
 import BackButton from "./BackButton";
 import ForwardButton from "./ForwardButton";
@@ -25,7 +27,7 @@ function App() {
           <About />
         </Route>
         <Route path="/users/:userId">
-          <UserProfile />
+          <User />
         </Route>
         <Route>
           <NoMatch />
